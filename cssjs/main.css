@@ -1,0 +1,74 @@
+#header {
+    background-color: rgb(153, 40, 40);
+    color: white;
+    padding: 15px;
+    border-bottom: 3px solid rgb(126, 31, 31);
+}
+
+#site-name {
+   padding: 50px;
+   text-align: center;
+}
+ 
+#header, #site-name, div, body {
+    font-family: 'Pompiere';
+    font-size: 16pt;
+}
+
+.math-function {
+    font-family: 'Bad Script';
+}
+
+#site-signature {
+    font-size: 13pt;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: rgb(20,20,22);
+    padding: 20px;
+    color: white;
+}
+
+.subject {
+    margin: 50px 0;
+}
+
+.topic, .mybtn {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid;
+    padding: 5px 10px;
+}
+
+#totop{
+    position: fixed;
+    bottom: 150px;
+    right: 50px;
+    border-radius: 25px;
+    padding: 10px;
+    min-width: 0px;
+    box-shadow: 1px 1px rgba(150, 150, 150, 0.5);
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-width: 50%;
+    padding: 15px;
+}
+
+#quickaccess {
+    display: none;
+}

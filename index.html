@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jacobi Method</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Pompiere|Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="cssjs/main.css">
+    <script src="cssjs/main.js"></script>
+    <title>Jacobi's Method</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Poiret+One|Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div id="site-signature">
+                <span class="math-function">f(x)</span> == <span class="code-function">double f(doubel x)</span>
+            </div>
+            <div id="quickaccess">
+                <a href="#input">Jump to calculator</a>
+            </div>
+            <div id="site-name">
+                <h1>Jacobi's <a href="#input" title="click to jump to the calculator">Calculator</a> </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotroon">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+
+                    <div class="jacobi-method-definition">
+                        <div class="subject">
+                            <div class="topic">
+                                Jacobi's Method
+                            </div>
+                            <div class="definition">
+                                Jacobi's Method can be used to solve a system of linear equations (symultaneous
+                                equations).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instruction">
+                        <div class="subject">
+                            <div class="topic">
+                                Instructions
+                            </div>
+                            <div class="definition">
+                                Type in your equations in the space provided below. <br />
+                                One equation per line; then,
+                                click the solve button.<br />
+                                Example of Equation:<br />
+                                <ul>
+                                    <li>ax + by + cz = d</li>
+                                    <li>ex + by + kz - h = 0</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caution">
+                        <div class="subject">
+                            <div class="topic">
+                                Caution
+                            </div>
+                            <div class="definition">
+                                <ul>
+                                    <li>variables must be represented with a <strong>Single</strong> alphabet
+                                        character.</li>
+                                    <li>Wrong, equations may result in incorrect or no output.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="input" class="input">
+                        <div class="subject">
+                            <div class="topic">Type your equations here</div>
+                            <div class="definition">
+                                <textarea id="eqns" spellcheck="false" placeholder="Type your equations here." rows="4">
+5a - 2b + 3c = -1 
+-3a + 9b + c = 2
+2a - 1b - 7c = 3
+                                            </textarea> <br />
+                                <button 
+                                class="btn btn-primary mybtn"
+                                onclick="validateAndSolve()">Solve</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="outpout">
+                        <div class="subject">
+                            <div class="topic">Results Table</div>
+                            <div class="definition">
+                                <div id="results-table">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="btn btn-default" id="totop"> <a href="#header">Top</a></span>
+    <footer>
+        Email: ghuywithissues@gmail.com <br>
+        <span id="request-wrapper">If you've got any computer related issues not hesitate to email ghuywithissues@gmail.com</span>
+    </footer>
+</body>
