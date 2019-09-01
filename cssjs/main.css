@@ -72,3 +72,8 @@ textarea {
 #quickaccess {
     display: none;
 }
+
+#results-table {
+    width: 100%;
+    overflow-x: auto;
+}
