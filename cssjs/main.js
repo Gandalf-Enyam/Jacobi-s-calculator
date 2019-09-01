@@ -6,8 +6,10 @@ function tolFunc() {
     return 0.00005;
 }
 
+var url = "https://jacobiapp.herokuapp.com/";
+
 function solve() {
-    var requestURL = "http://127.0.0.1:8080/solve";
+    var requestURL = url + "solve";
     var requestMethod = "POST";
     var requestHeader = { header: "Content-type", value: "application/x-www-form-urlencoded" };
 
@@ -26,7 +28,7 @@ function solve() {
 
 function validateAndSolve() {
 
-	var requestURL = "http://127.0.0.1:8080/validate";
+    var requestURL = url + "validate";
     var requestMethod = "POST";
     var requestHeader = { header: "Content-type", value: "application/x-www-form-urlencoded" };
 
