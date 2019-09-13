@@ -77,3 +77,12 @@ textarea {
     width: 100%;
     overflow-x: auto;
 }
+
+#mrcal {
+	display: none;
+}
+
+#mrcal img {
+	border-radius: 5px;
+	margin: 10px 0;
+}
