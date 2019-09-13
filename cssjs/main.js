@@ -28,6 +28,7 @@ function solve() {
     xhttp.onreadystatechange = function () {
         console.log(xhttp.responseText);
         document.getElementById("results-table").innerHTML = xhttp.responseText;
+	stopAnimation();
     }
 
     var data = "eqns=" + document.getElementById("eqns").value + "&&tol=" + tol;
@@ -57,8 +58,6 @@ function validateAndSolve() {
 
     var data = "eqns=" + document.getElementById("eqns").value + "&&tol=" + tol;
     xhttp.send(data);
-	
-	stopAnimation();
 
 }
 
