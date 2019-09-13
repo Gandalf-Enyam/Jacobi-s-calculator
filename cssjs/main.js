@@ -8,6 +8,14 @@ function tolFunc() {
 
 var url = "https://jacobiapp.herokuapp.com/";
 
+function startAnimation () {
+	document.getElementById("mrcal").style = "display: block";
+}
+
+function stopAnimation () {
+	document.getElementById("mrcal").style = "display: none";
+}
+
 function solve() {
     var requestURL = url + "solve";
     var requestMethod = "POST";
@@ -28,6 +36,8 @@ function solve() {
 
 function validateAndSolve() {
 
+	startAnimation();
+	
     var requestURL = url + "validate";
     var requestMethod = "POST";
     var requestHeader = { header: "Content-type", value: "application/x-www-form-urlencoded" };
@@ -47,6 +57,8 @@ function validateAndSolve() {
 
     var data = "eqns=" + document.getElementById("eqns").value + "&&tol=" + tol;
     xhttp.send(data);
+	
+	stopAnimation();
 
 }
 
