@@ -37,7 +37,7 @@ function solve() {
 
 function validateAndSolve() {
 
-	startAnimation();
+    startAnimation();
 	
     var requestURL = url + "validate";
     var requestMethod = "POST";
@@ -54,6 +54,7 @@ function validateAndSolve() {
 			return;
 		}
 		solve();
+	    	stopAnimation();
     }
 
     var data = "eqns=" + document.getElementById("eqns").value + "&&tol=" + tol;
