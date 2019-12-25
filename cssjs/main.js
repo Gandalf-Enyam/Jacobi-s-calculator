@@ -38,6 +38,7 @@ function solve() {
 function validateAndSolve() {
 
     startAnimation();
+    document.getElementById("results-table").innerHTML = "";
 	
     var requestURL = url + "validate";
     var requestMethod = "POST";
