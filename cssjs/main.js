@@ -38,6 +38,7 @@ function solve() {
 function validateAndSolve() {
 
     startAnimation();
+    stopAnimation();
 	
     var requestURL = url + "validate";
     var requestMethod = "POST";
